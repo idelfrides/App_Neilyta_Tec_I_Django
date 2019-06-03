@@ -7,7 +7,7 @@
 This is an app created to teach Django 2.2.1 on **NEILYTA TEC I - Semana tecnológica da escola profissionalizante de Massapê**.
 Python 3.6.2 is the python interpreter version used on the project append on . 
 
-The App define five (5) categories: Professores | Alunos | Cursos | Professores que fazem parte da organização do evento | Alunos de destaque and build the CRUD operations for all category.
+The App define five (5) categories: Professores | Alunos | Cursos | Professores que fazem parte da organização do evento | Alunos de destaque and build the CRUD operations for all categories.
 
 
 The App brings a home page about the event - **NEILYTA TEC I**
