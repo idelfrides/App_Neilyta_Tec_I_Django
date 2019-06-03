@@ -24,6 +24,7 @@ O presente projeto visa trazer para a população discente novos conhecimentos q
 agregar de forma positiva, pois esses novos conheciemntos podem ser uma poderosa ferramenta
 para o seu futuro acadêmico e profissional.
 
+[MORE ABOUT NEILYTA TEC](https://github.com/idelfrides/App-Neilyta-Tesc-I---Django-2.2.1/wiki)
 
 Author: IDELFRIDES JORGE |
 Mail me by idelfridesjorge@alu.ufc.br
