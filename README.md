@@ -1,4 +1,4 @@
-# App Neilyta Tesc I - Django
+# App Neilyta Tec I - Django
 
 
 
