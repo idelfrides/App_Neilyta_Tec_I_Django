@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from cursodjango.models import Professores, Alunos, Cursos
-from cursodjango.FormsApp import ProfForm, AlunoForm, CursoForm
-from cursodjango.models import Evento
+from app_neilytaTec1.models import Professores, Alunos, Cursos
+from app_neilytaTec1.formsApp import ProfForm, AlunoForm, CursoForm
+from app_neilytaTec1.models import Evento
 
 
 def home(request):
@@ -12,7 +12,7 @@ def home(request):
 
     return render(
         request, 
-        'cursodjango/home.html', 
+        'app_neilytaTec1/home.html', 
         dados_evento
     )
 
@@ -21,7 +21,7 @@ def listagem(request):
     dados = {'info':'Listagem de professores, alunos, cursos, membrosa da diretoria'}
     return render(
         request, 
-        'cursodjango/listagem.html', 
+        'app_neilytaTec1/listagem.html', 
         dados
     )
     
@@ -45,7 +45,7 @@ def create(request, code):
 
         return render(
             request, 
-            'cursodjango/cadastro.html', 
+            'app_neilytaTec1/cadastro.html', 
             dados
         )
 
@@ -62,7 +62,7 @@ def create(request, code):
 
         return render(
             request, 
-            'cursodjango/cadastro.html', 
+            'app_neilytaTec1/cadastro.html', 
             dados
         )
 
@@ -79,7 +79,7 @@ def create(request, code):
 
         return render(
             request, 
-            'cursodjango/cadastro.html', 
+            'app_neilytaTec1/cadastro.html', 
             dados
         )
     else:
@@ -94,7 +94,7 @@ def listarProf(request):
     dadosProf['info'] = 'Listagem de professores com  algumas de suas respectivas informações'
     dadosProf['professores'] = Professores.objects.all()
     return render(request, 
-        'cursodjango/listarProf.html', 
+        'app_neilytaTec1/listarProf.html', 
         dadosProf
     )
 
@@ -105,7 +105,7 @@ def listarAlunos(request):
     dadosAlunos['alunos'] = Alunos.objects.all()
     return render(
         request, 
-        'cursodjango/listarAlunos.html', 
+        'app_neilytaTec1/listarAlunos.html', 
         dadosAlunos
     )
 
@@ -115,7 +115,7 @@ def listarCursos(request):
     dadosCursos['cursos'] = Cursos.objects.all()
     return render(
         request, 
-        'cursodjango/listarCuros.html', 
+        'app_neilytaTec1/listarCuros.html', 
         dadosCursos
     )
 
@@ -137,7 +137,7 @@ def update(request, code, pk):
         dados['form'] = form
         return render(
             request, 
-            'cursodjango/formUpdateProf.html', 
+            'app_neilytaTec1/formUpdateProf.html', 
             dados
         )
 
@@ -156,7 +156,7 @@ def update(request, code, pk):
         dados['form'] = form
         return render(
             request, 
-            'cursodjango/formUpdateAluno.html', 
+            'app_neilytaTec1/formUpdateAluno.html', 
             dados
         )
 
@@ -174,7 +174,7 @@ def update(request, code, pk):
         dados['form'] = form
         return render(
             request, 
-            'cursodjango/formUpdateCurso.html', 
+            'app_neilytaTec1/formUpdateCurso.html', 
             dados
         )
     else:

@@ -1,5 +1,24 @@
 from django.db import models
 
+GENDER_CHOICE = [
+    ('MASCULINO', 'Masculino'),
+    ('FEMININO', 'Feminino'),
+]
+
+PROF_TITLE_CHOICE = [
+    ('BACHAREL', 'Bacharel'),
+    ('ESPECIALISATA', 'Especialista'),
+    ('MESTRE', 'Mestre'),
+    ('PHD', 'PhD'),
+]
+
+COURSES_CHOICE = [
+    ('TÉCNICO EM INFORMÁTICA', 'TÉCNICO EM INFORMÁTICA'),
+    ('TÉCNICO EM AGROPECUÁRIA', 'TÉCNICO EM EM AGROPECUÁRIA'),
+    ('TÉCNICO EM ELETROMECÂNICA', 'TÉCNICO EM ELETROMECÂNICA'),
+    ('TÉCNICO EM FINANÇAS', 'TÉCNICO EM FINANÇAS'),
+]
+
 
 class Evento(models.Model):
     nome_Evento = models.CharField(max_length=100)
@@ -14,7 +33,10 @@ class Evento(models.Model):
 
 
 class Cursos(models.Model):
-    nome_Curso = models.CharField(max_length=100)
+    nome_Curso = models.CharField(
+        max_length=30, 
+        choices=COURSES_CHOICE
+    )
     data_Inicio = models.DateField()
     num_Alunos = models.IntegerField()
     num_Prof = models.IntegerField()
@@ -22,7 +44,8 @@ class Cursos(models.Model):
     descricao = models.TextField()
 
     def __str__(self):
-         return '%s' % (self.nome_Curso)
+        return '%s' % (self.nome_Curso)
+        
 
     class Meta:
         verbose_name_plural = 'Cursos'
@@ -34,7 +57,10 @@ class Professores(models.Model):
         max_length=100, 
         default='Eng. Computação'
     )
-    titulo_Academico = models.CharField(max_length=30)
+    titulo_Academico = models.CharField(
+        max_length=30, 
+        choices=PROF_TITLE_CHOICE
+    )
     curso_Leciona = models.ForeignKey(
         Cursos, 
         on_delete=models.CASCADE
@@ -58,8 +84,9 @@ class Alunos(models.Model):
         on_delete=models.CASCADE
     )
     genero = models.CharField(
-        max_length=1, 
-        default='M'
+        max_length=30,
+        choices=GENDER_CHOICE,
+        # default='M'
     )
     idade = models.IntegerField()
     eh_destaque = models.BooleanField()

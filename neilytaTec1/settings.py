@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cursodjango',  # nossa aplicacao
+    'app_neilytaTec1',
+    # 'cursodjango',
 ]
+
+# 'cursodjango', 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

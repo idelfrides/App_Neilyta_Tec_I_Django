@@ -1,6 +1,6 @@
 from django.forms import ModelForm
-from cursodjango.models import Professores, Alunos
-from cursodjango.models import Cursos
+from app_neilytaTec1.models import Professores, Alunos
+from app_neilytaTec1.models import Cursos
 
 
 class ProfForm(ModelForm):
