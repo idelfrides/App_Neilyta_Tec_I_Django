@@ -17,7 +17,6 @@ class ProfForm(ModelForm):
         ]
 
 
-
 class AlunoForm(ModelForm):
     class Meta:
         model = Alunos

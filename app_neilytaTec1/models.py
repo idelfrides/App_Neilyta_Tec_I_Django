@@ -1,5 +1,6 @@
 from django.db import models
 
+
 GENDER_CHOICE = [
     ('MASCULINO', 'Masculino'),
     ('FEMININO', 'Feminino'),
@@ -86,7 +87,6 @@ class Alunos(models.Model):
     genero = models.CharField(
         max_length=30,
         choices=GENDER_CHOICE,
-        # default='M'
     )
     idade = models.IntegerField()
     eh_destaque = models.BooleanField()

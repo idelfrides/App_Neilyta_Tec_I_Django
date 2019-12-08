@@ -49,7 +49,7 @@ def create(request, code):
             dados
         )
 
-    elif code == 2: # create aluno
+    if code == 2: # create aluno
         dados = {}
         dados['acao'] = 'Cadastro de Alunos'
         dados['info'] = 'Cadastro de um(a) novo(a) Aluno(a)'
@@ -66,7 +66,7 @@ def create(request, code):
             dados
         )
 
-    elif code == 3:  # create curso
+    if code == 3:  # create curso
         dados = {}
         dados['acao'] = 'Cadastro de Cursos'
         dados['info'] = 'Cadastro de um novo Curso '
@@ -141,7 +141,7 @@ def update(request, code, pk):
             dados
         )
 
-    elif code == 2: # update aluno
+    if code == 2: # update aluno
         dados = {}
         dados['info'] = 'Atualização de dados do(a) aluno(a) '
         alunoData = Alunos.objects.get(id = pk)
@@ -160,7 +160,7 @@ def update(request, code, pk):
             dados
         )
 
-    elif code == 3:  # update curso
+    if code == 3:  # update curso
         dados = {}
         dados['info'] = 'Atualização de dados do Curso '
         cursoData = Cursos.objects.get(id = pk)
@@ -190,12 +190,12 @@ def remove(request, code, pk):
         profData.delete()
         return redirect('go2listarprof')
 
-    elif code == 2: # remove aluno
+    if code == 2: # remove aluno
         alunoData = Alunos.objects.get(id = pk)
         alunoData.delete()
         return redirect('go2listaralunos')
 
-    elif code == 3:  # remove curso
+    if code == 3:  # remove curso
         cursoData = Cursos.objects.get(id = pk)
         cursoData.delete()
         return redirect('go2listarcursos')
