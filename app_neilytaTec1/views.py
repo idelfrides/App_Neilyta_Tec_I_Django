@@ -29,7 +29,7 @@ def listagem(request):
 # CRUD -> CREATE | READ | UPDATE | DELETE
 
 # -------------------------------------
-#1            CREATE
+# 1            CREATE
 # -------------------------------------
 def create(request, code):
     if code == 1:  # create professor
@@ -85,7 +85,6 @@ def create(request, code):
     else:
         return redirect('url_listagem')
 
-
 # -------------------------------------
 # 2            READ
 # -------------------------------------
@@ -98,7 +97,6 @@ def listarProf(request):
         dadosProf
     )
 
-
 def listarAlunos(request):
     dadosAlunos = {}
     dadosAlunos['info'] = 'Listagem de alunos com  algumas de suas respectivas informações'
@@ -108,7 +106,6 @@ def listarAlunos(request):
         'app_neilytaTec1/listarAlunos.html', 
         dadosAlunos
     )
-
 
 def listarCursos(request):
     dadosCursos = {}
@@ -202,5 +199,3 @@ def remove(request, code, pk):
     else:
         return redirect('url_listagem')
     
-
-

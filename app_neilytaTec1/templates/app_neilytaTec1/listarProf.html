@@ -22,44 +22,43 @@
         <p class="text-center display-5">{{ info }}</p>
     </div>
 
-    <div class="container">
-
-      <table class="table table-hover border">
-          <thead class="thead-dark">
-              <tr>
-                  <th>Ordem</th>
-                  <th>Nome</th>
-                  <th>Formação</th>
-                  <th>Título Acade</th>
-                  <th>Curso Leciona</th>
-                  <th>Ano Início</th>
-                  <th>Nº Turmas</th>
-                  <th>Membro Org. </th>
-                  <th>Atualizar</th>
-                  <th>Remover</th>
-              </tr>
-          </thead>
-          <tbody>
-             {% for prof in professores %}
-              <tr class="text-uppercase">
-                  <td>{{ prof.id }}</td>
-                  <td>{{ prof.nome_Prof }}</td>
-                  <td>{{ prof.formacao }}</td>
-                  <td>{{ prof.titulo_Academico }}</td>
-                  <td>{{ prof.curso_Leciona }}</td>
-                  <td>{{ prof.ano_Inicio }}</td>
-                  <td>{{ prof.turmas }}</td>
-                  <td>{{ prof.membro_Organizacao }}</td>
-                  <td>
-                      <a href="{% url 'url_update' 1 prof.id %}"><button type="button" class="btn btn-primary">Atualizar</button></a>
-                  </td>
-                  <td>
-                      <a href="{% url 'url_remove' 1  prof.id %}"><button type="button" class="btn btn-danger">Remover</button></a>
-                  </td>
-              </tr>
-              {% endfor %}
-          </tbody>
-      </table>
+    <div class="table-responsive container">
+        <table class="table table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Ordem</th>
+                    <th>Nome</th>
+                    <th>Formação</th>
+                    <th>Título Acade</th>
+                    <th>Curso Leciona</th>
+                    <th>Ano Início</th>
+                    <th>Nº Turmas</th>
+                    <th>Membro Org. </th>
+                    <th>Atualizar</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for prof in professores %}
+                <tr class="text-uppercase">
+                    <td>{{ prof.id }}</td>
+                    <td>{{ prof.nome_Prof }}</td>
+                    <td>{{ prof.formacao }}</td>
+                    <td>{{ prof.titulo_Academico }}</td>
+                    <td>{{ prof.curso_Leciona }}</td>
+                    <td>{{ prof.ano_Inicio }}</td>
+                    <td>{{ prof.turmas }}</td>
+                    <td>{{ prof.membro_Organizacao }}</td>
+                    <td>
+                        <a href="{% url 'url_update' 1 prof.id %}"><button type="button" class="btn btn-primary">Atualizar</button></a>
+                    </td>
+                    <td>
+                        <a href="{% url 'url_remove' 1  prof.id %}"><button type="button" class="btn btn-danger">Remover</button></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 
     <br><br><br>
