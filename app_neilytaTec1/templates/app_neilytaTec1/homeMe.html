@@ -25,79 +25,52 @@
 <body class="w-100 m-0 p-0" style="background-color:#E9ECEF;">
     <div class="w-100 mt-3">
         <!-- menu -->
-        <!--
+        
         <div class="nav border border-dark w-100 bg-dark">
             <div class="mx-5 bg-light">
                 <a href="#" title="Logo I NEILYTA TEC">
                     <img src="media/images/Logo-Ev-EEEP.png" width="120">
                 </a>
             </div>
-             <ul class="nav nav-tabs text-uppercase justify-content-end w-75">
-                  <li class="nav-item  my-4 mx-3">
-                    <a class="nav-link active" href="{% url 'url_home' %}">
+            
+            <ul class="nav nav-tabs text-uppercase justify-content-end w-75">
+                <li class="nav-item  my-4 mx-3">
+                    <a class="nav-link active"  href="{% url 'url_home' %}" title="Home">
                         home
                     </a>
-                  </li>
-                  <li class="nav-item  my-4 mx-3">
-                    <a class="nav-link text-white" href="#evento">
+                </li>
+
+                <li class="nav-item  my-4 mx-3">
+                        <a class="nav-link text-white" href="#evento" title="Saiba sobre Evento">
                         evento
-                    </a>
-                  </li>
-                  <li class="nav-item  my-4 mx-2">
-                    <a class="nav-link text-white" href="#">
+                        </a>
+                </li>
+
+                <li class="nav-item  my-4 mx-2">
+                    <a class="nav-link text-white" href="#" title="Realizadores">
                         realizacao
                     </a>
-                  </li>
-                  <li class="nav-item  my-4 mx-2">
-                    <a class="nav-link text-white"  href="#">
+                </li>
+
+                <li class="nav-item  my-4 mx-2">
+                    <a class="nav-link text-white"  href="#" title="Cursos Técnicos">
                         cursos
                     </a>
-                  </li>
-                  <li class="nav-item  my-4 mx-2">
-                    <a class="nav-link text-white" href="#">
+                </li>
+
+                <li class="nav-item  my-4 mx-2">
+                    <a class="nav-link text-white" href="#" title="Alunos Destaque">
                         alunos destaque
                     </a>
-                  </li>
-                  <li class="nav-item  my-4 mx-2">
-                    <a class="nav-link text-white" href="{% url 'url_listagem' %}">
+                </li>
+
+                <li class="nav-item  my-4 mx-2">
+                    <a class="nav-link text-white" href="{% url 'url_listagem' %}" title="Listagem de todas cateorias">
                         listagem
                     </a>
-                  </li>
+                </li>
             </ul>
-        </div> -->
-
-        <!-- Navbar -->
-        <nav class="navbar navbar-dark darken-2 bg-dark">
-            <!-- navbar brand -->
-            <a class="navbar-brand" href="#">Navbar</a>
-
-            <!-- collapse button -->
-            <button 
-                class="navbar-toggler third-button" 
-                type="button" data-toggle="collapse" 
-                data-target="#navbarSupportedContent22" 
-                aria-controls="navbarSupportedContent22"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <div class="animated-icon3"><span></span><span></span><span></span>&copy;</div>
-            </button>
-            
-            <!-- collapsible content -->
-            <div class="collapse navbar-collapse" id="navbarSupporteedContent22">
-
-                <!-- links -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">serviço</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">listagem</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        </div>
 
         <!-- ************  Carousel  *************************** -->
         <div id="eeep" class="carousel slide w-100" data-ride="carousel">
@@ -162,17 +135,6 @@
                         </p>
                     </div>
                 </div>
-                <!--
-                <div class="carousel-item">
-                    <img src="media/images/alunos2.jpg" class="img-fluid"  title="ALUNAS DA EEEP NEILYTA" alt="I NEILYTA TEC WM USA" >
-                    <div class="carousel-caption">
-                        <h3 class="text-uppercase" style="color:#643885;">ALUNOS DENTRO DA EEEP NEILYTA</h3>
-                        <p class="text-capitalize">
-                            I senama tecnológica de escola profissionalizante de Massapê!
-                        </p>
-                    </div>
-                </div> -->
-
             </div>
 
             <!-- Left and right controls -->
@@ -185,7 +147,7 @@
         </div>
        
         <!-- ************ evento ************** -->
-        <div class="container-fluid bg-dark w-100 py-5 border border-white">
+        <div class="container-fluid bg-dark w-100 py-5 border-white">
             <section id="evento" class="container border border-dark w-100 bg-dark py-5">
                 <header >
                     <h1 class="text-white font-weight-bold text-uppercase text-center display-5">

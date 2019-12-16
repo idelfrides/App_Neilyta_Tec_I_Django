@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from app_neilytaTec1.models import Professores, Alunos, Cursos
+from app_neilytaTec1.models import Professores, Alunos
+from app_neilytaTec1.models import Evento, Cursos 
 from app_neilytaTec1.formsApp import ProfForm, AlunoForm, CursoForm
-from app_neilytaTec1.models import Evento
 
 
 def home(request):
@@ -12,7 +12,7 @@ def home(request):
 
     return render(
         request, 
-        'app_neilytaTec1/home.html', 
+        'app_neilytaTec1/homeMe.html', 
         dados_evento
     )
 

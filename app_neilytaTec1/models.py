@@ -20,7 +20,6 @@ COURSES_CHOICE = [
     ('TÉCNICO EM FINANÇAS', 'TÉCNICO EM FINANÇAS'),
 ]
 
-
 class Evento(models.Model):
     nome_Evento = models.CharField(max_length=100)
     image = models.ImageField(upload_to='images/')
