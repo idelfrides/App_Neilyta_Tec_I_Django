@@ -1,0 +1,21 @@
+
+span{
+    font-size: 88px;
+}
+
+.scrollToTop{
+    position: fixed;
+    display: none;
+    right: 5%;
+    bottom: 20px;
+
+   
+}
+
+.box{
+    background-color: red;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    cursor: pointer;
+}

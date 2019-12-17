@@ -18,7 +18,7 @@ def home(request):
 
 
 def listagem(request):
-    dados = {'info':'Listagem de professores, alunos, cursos, membrosa da diretoria'}
+    dados = {'info':'Listagem de professores, alunos, cursos'}
     return render(
         request, 
         'app_neilytaTec1/listagem.html', 

@@ -95,3 +95,6 @@ class Alunos(models.Model):
 
     class Meta:
         verbose_name_plural = 'Alunos'
+
+
+# TODO: restart models pk/id sequence

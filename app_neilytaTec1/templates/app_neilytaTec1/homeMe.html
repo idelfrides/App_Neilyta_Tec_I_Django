@@ -11,10 +11,14 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="../../../static/style/app_css.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    
+    <script src="../../../static/js_files/app_js.js" type="text/javascript" language="javascript"></script> 
+    
     <style>
         .carousel-inner{
             width:100%;
@@ -25,14 +29,13 @@
 <body class="w-100 m-0 p-0" style="background-color:#E9ECEF;">
     <div class="w-100 mt-3">
         <!-- menu -->
-        
-        <div class="nav border border-dark w-100 bg-dark">
+        <div class="nav border border-dark w-100 bg-dark nav-fixed">
             <div class="mx-5 bg-light">
                 <a href="#" title="Logo I NEILYTA TEC">
                     <img src="media/images/Logo-Ev-EEEP.png" width="120">
                 </a>
             </div>
-            
+
             <ul class="nav nav-tabs text-uppercase justify-content-end w-75">
                 <li class="nav-item  my-4 mx-3">
                     <a class="nav-link active"  href="{% url 'url_home' %}" title="Home">
@@ -47,7 +50,7 @@
                 </li>
 
                 <li class="nav-item  my-4 mx-2">
-                    <a class="nav-link text-white" href="#" title="Realizadores">
+                    <a class="nav-link text-white" href="#" title="Realizadores do Evento">
                         realizacao
                     </a>
                 </li>
@@ -59,7 +62,7 @@
                 </li>
 
                 <li class="nav-item  my-4 mx-2">
-                    <a class="nav-link text-white" href="#" title="Alunos Destaque">
+                    <a class="nav-link text-white" href="#" title="Alunos de alto performance">
                         alunos destaque
                     </a>
                 </li>
@@ -88,7 +91,7 @@
             <div class="carousel-inner" >
                 <div class="carousel-item active">
                     <img src="media/images/prof_servidores.jpg" class="img-fluid" title="ALUNOS DA EEEP NEILYTA" alt="I NEILYTA TEC">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" id="adjust_cap">
                         <h3 class="text-uppercase" style="color:#643885;">ALUNOS DENTRO DA EEEP NEILYTA</h3>
                         <p class="text-capitalize">
                             I senama tecnológica de escola profissionalizante de Massapê!
@@ -176,6 +179,16 @@
             </section>
         </div>
 
+        <!-- SCROLL TOP -->
+        
+        <a class="scrollToTop" href="#"> TOP
+            <i class="fas fa-arrow-circle-up" style="font-size:48px; color: red;">
+            </i>
+        </a>
+
+        <div class="box">
+            <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+        </div>
         <!-- footer -->
         <div class="py-3" style="background-color:#643885;"></div>
         <section class="text-white text-weight-bold text-center">
